@@ -1,0 +1,23 @@
+{
+  "name": "newframeqa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:web": "ts-node src/runner.ts web",
+    "test:native": "ts-node src/runner.ts native"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.15.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
