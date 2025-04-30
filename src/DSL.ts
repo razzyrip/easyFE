@@ -18,5 +18,3 @@ export const launchApp = (bundleId: string) =>
 
 export const wait = (ms: number) => 
     steps.push({ type: 'wait', value: String(ms) });
-  
-  

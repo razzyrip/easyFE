@@ -3,8 +3,16 @@ import { TestEngine, Step } from './TestEngine';
 
 export class PlaywrightEngine implements TestEngine {
   async run(steps: Step[]) {
-    const browser = await chromium.launch({ headless: false });
-    const page = await browser.newPage();
+    const browser = await chromium.launch({ 
+      headless: false,
+      args: ['--window-size=1920,1080']
+    });
+    
+  const context = await browser.newContext({
+    viewport: { width: 1920, height: 1080 }, // musí odpovídat window-size
+  });
+
+  const page = await context.newPage();
 
     for (const s of steps) {
       console.log(`[STEP]:`, s); // Log každého kroku
