@@ -27,7 +27,7 @@
 - Nainstalovaný [Maestro CLI](https://maestro.mobile.dev) (`brew install maestro`)
 - Android Emulator nebo fyzické zařízení s přístupem přes ADB
 - iOS zařízení nebo simulátor (pouze macOS s Xcode)
-- Testovací YAML soubory v adresáři `/tests`
+- Testovací YAML se automaticky generuje při spuštění v adresáři `/tests`
 
 ---
 
